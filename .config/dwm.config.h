@@ -51,7 +51,6 @@ static const Layout layouts[] = {
  	/* symbol     arrange function */
 	{ "[@]",      spiral },
 	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
  	{ "[M]",      monocle },
 	{ "[\\]",     dwindle },
 	{ "H[]",      deck },
@@ -64,7 +63,7 @@ static const Layout layouts[] = {
 	{ "|M|",      centeredmaster },
 	{ ">M>",      centeredfloatingmaster },
 	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ NULL,       NULL },
+  { NULL,       NULL }
 };
 
 /* key definitions */
@@ -91,10 +90,10 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY|ShiftMask,             XK_f,      togglefullscr,  {0} },
-	{ MODKEY,                       XK_Right,  focusstack,     {.i = +1 } },
+	{ MODKEY,                       XK_Right,  focusstack,     {.i = 1 } },
 	{ MODKEY,                       XK_Left,   focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_Up,     setlayout,      {.i = -1 } },
-	{ MODKEY,                       XK_Down,   setlayout,      {.i = +1 } },	
+  { MODKEY,		                    XK_Up,     cyclelayout,    {.i = -1 } },
+  { MODKEY,                       XK_Down,   cyclelayout,    {.i = +1 } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)

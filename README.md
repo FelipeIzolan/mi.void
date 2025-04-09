@@ -9,16 +9,20 @@ cd mi.void
 chmod +x ./install.sh
 ./install.sh
 ```
+
+> You need to install the graphics drivers:\
+> https://docs.voidlinux.org/config/graphical-session/graphics-drivers/index.html
+
 ## 💾 Mappings
 
-- Super + q - Kill.
-- Super + Return - Open terminal.
-- Super + Space - Open application launcher.
-- Super + Shift + f - Toggle fullscreen.
-- Super + Left - Focus previous window.
-- Super + Right - Focus next window.
-- Super + Up - Set previous layout.
-- Super + Down - Set next layout.
+- **Super + q** - Kill.
+- **Super + Return** - Open terminal.
+- **Super + Space** - Open application launcher.
+- **Super + Shift + f** - Toggle fullscreen.
+- **Super + Left** - Focus previous window.
+- **Super + Right** - Focus next window.
+- **Super + Up** - Set previous layout.
+- **Super + Down** - Set next layout.
 
 ## 📦 Patches
 
@@ -26,6 +30,7 @@ chmod +x ./install.sh
 - [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/)
 - [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/)
 - [underlinetags](https://dwm.suckless.org/patches/underlinetags/)
+- [cyclelayouts](https://dwm.suckless.org/patches/cyclelayouts/)
 - [notitle](https://dwm.suckless.org/patches/notitle/)
 
 ### st
