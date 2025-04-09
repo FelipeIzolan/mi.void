@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 sudo xbps-install -S xorg-minimal\
                      xorg-fonts\
                      setxkbmap\
@@ -7,10 +9,12 @@ sudo xbps-install -S xorg-minimal\
                      dbus\
                      turnstile\
                      rofi\
-                     mesa-dri
+                     mesa-dri\
+		     libX11\
+		     libXft\
+		     libXinerama
 
-sudo xbps-install git\
-                  curl\
+sudo xbps-install curl\
                   patch\
                   xdg-user-dirs
 
@@ -70,8 +74,7 @@ sudo cp -f ./CaskaydiaCoveNerdFont-Regular.tff /usr/share/fonts
 
 xdg-user-dirs-update
 
-sudo xbps-remove -R git\
-                    curl\
+sudo xbps-remove -R curl\
                     patch\
                     xdg-user-dirs\
                     base-devel\
