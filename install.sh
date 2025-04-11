@@ -12,7 +12,8 @@ sudo xbps-install -S xorg-minimal\
                      mesa-dri\
 		     libX11\
 		     libXft\
-		     libXinerama
+		     libXinerama\
+		     xclip
 
 sudo xbps-install curl\
                   patch\
@@ -68,10 +69,12 @@ cp -f ./wallpaper.png ~/wallpaper.png
 cp -f ./.xinitrc ~/.xinitrc
 cp -rf ./.config/rofi ~/.config/rofi
 
-sudo cp -f ./CaskaydiaCoveNerdFont-Regular.tff /usr/share/fonts
+sudo cp -f ./CaskaydiaCoveNerdFont-Regular.ttf /usr/share/fonts
 
 #####################################################################
 
+mkdir ~/.cache
+sudo chmod -R 777 ~/.cache
 xdg-user-dirs-update
 
 sudo xbps-remove -R curl\
