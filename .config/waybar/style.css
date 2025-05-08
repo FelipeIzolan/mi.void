@@ -1,0 +1,29 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 14px;
+  padding:0;
+  margin:0;
+}
+
+window#waybar {
+  color: #f6f6f6;
+  background-color: #101010;
+}
+
+#taskbar button {
+  padding: 0 2px;
+  
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+  border-radius: 0;
+}
+
+#taskbar button:hover {
+  background: #141414;
+}
+
+#clock {
+  padding: 0 8px;
+}

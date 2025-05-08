@@ -1,0 +1,17 @@
+{
+  "layer": "top",
+  "spacing": 0,
+  "modules-left": [
+  ],
+  "modules-center": [
+    "wlr/taskbar"
+  ],
+  "modules-right": [
+    "clock"
+  ],
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 20,
+    "on-click": "minimize-raise",
+  }
+}

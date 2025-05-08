@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<labwc_config>
+  
+  <theme>
+    <name></name>
+    <font name="JetBrainsMono Nerd Font" size="10" />
+    <keepBorder>no</keepBorder>
+    <dropShadows>yes</dropShadows>
+    <cornerRadius>0</cornerRadius>
+  </theme>
+
+  <desktops number="4" />
+  
+  <keyboard>
+    <default />
+    <keybind key="W-Return">
+      <action name="Execute" command="foot" />
+    </keybind>
+    <keybind key="W-Space">
+      <action name="Execute" command="fuzzel -T foot" />
+    </keybind>
+    <keybind key="W-q">
+      <action name="Kill" />
+    </keybind>
+    <keybind key="W-S-f">
+      <action name="ToggleFullscreen" />
+    </keybind>
+
+    <keybind key="W-1">
+      <action name="GoToDesktop" to="1" />
+    </keybind>
+    <keybind key="W-2">
+      <action name="GoToDesktop" to="2" />
+    </keybind>
+    <keybind key="W-3">
+      <action name="GoToDesktop" to="3" />
+    </keybind>
+    <keybind key="W-4">
+      <action name="GoToDesktop" to="4" />
+    </keybind>
+    <keybind key="W-S-1">
+      <action name="SendToDesktop" to="1" follow="yes" />
+    </keybind>
+    <keybind key="W-S-2">
+      <action name="SendToDesktop" to="2" follow="yes" />
+    </keybind>
+    <keybind key="W-S-3">
+      <action name="SendToDesktop" to="3" follow="yes" />
+    </keybind>
+    <keybind key="W-S-4">
+      <action name="SendToDesktop" to="4" follow="yes" />
+    </keybind>
+  </keyboard>
+  
+  <mouse>
+    <default />  
+  </mouse>
+
+</labwc_config>
