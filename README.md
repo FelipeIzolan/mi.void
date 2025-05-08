@@ -14,6 +14,14 @@ cd mi.void
 > 1. The script will overwrite the ~/.config directory.
 > 2. Reboot your computer after installation.
 
+**Starting**
+
+By default, no display manager is used, so to start the compositor, in tty type 'labwc'.
+
+```
+$ labwc
+```
+
 ## 💽 Pieces of Software
 
 - [wayland](https://wayland.freedesktop.org/)

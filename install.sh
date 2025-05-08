@@ -12,10 +12,12 @@ if [ $driver -ne "0" -a $driver -ne "1" ]; then
   exit
 fi
 
-sudo xbps-install linux-firmware-$([[ $driver =  "0" ]] && echo "intel" || echo "amd") msi-dri
+sudo xbps-install linux-firmware-$([[ $driver =  "0" ]] && echo "intel" || echo "amd") mesa-dri
 sudo xbps-install -y dbus turnstile seatd
 
-sudo xbps-install -y labwc wbg foot fuzzy dejavu-fonts-ttf
+sudo xbps-install -y labwc Waybar wbg foot fuzzel
+sudo xbps-install -y hicolor-icon-theme dejavu-fonts-ttf
+
 sudo xbps-install -y wireplumber pipewire
 sudo xbps-install -y wl-clipboard
 
