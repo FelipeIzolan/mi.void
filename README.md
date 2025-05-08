@@ -40,3 +40,10 @@ cd mi.void
 > [!NOTE]
 > **\<W\>** is Super (WinKey);\
 > **\<S\>** is Shift;
+
+## 📸 Screenshots
+
+![image](https://github.com/user-attachments/assets/6c03d2cd-58de-479a-8049-f6844cc5c9a7)
+![image](https://github.com/user-attachments/assets/d362e45a-d3a2-469a-b1cb-bdb96e617cf2)
+![image](https://github.com/user-attachments/assets/886b5822-0815-4d49-a488-38b49ed65e2c)
+
